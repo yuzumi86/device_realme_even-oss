@@ -19,9 +19,6 @@ DEVICE_PATH := device/realme/even
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/even/even-vendor.mk)
 
-# Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 

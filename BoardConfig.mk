@@ -58,6 +58,10 @@ TARGET_BOOTLOADER_BOARD_NAME := oppo6768
 TARGET_NO_BOOTLOADER := true
 BOARD_HAS_MTK_HARDWARE := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_even
+TARGET_RECOVERY_DEVICE_MODULES := libinit_even
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
