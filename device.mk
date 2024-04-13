@@ -97,6 +97,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.even \
+    android.hardware.health-service.even-recovery
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
@@ -114,11 +119,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/idc/mtk-kpd.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/mtk-kpd.idc \
     $(DEVICE_PATH)/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl \
     $(DEVICE_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl
-
-# KPOC
-PRODUCT_PACKAGES += \
-    libsuspend \
-    android.hardware.health@2.0
 
 # Keymaster
 PRODUCT_PACKAGES += \
