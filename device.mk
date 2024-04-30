@@ -22,6 +22,12 @@ $(call inherit-product, vendor/realme/even/even-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# IMS
+$(call inherit-product, vendor/realme/even-ims/even-ims.mk)
+
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
