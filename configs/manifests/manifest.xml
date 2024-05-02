@@ -1,4 +1,4 @@
-<manifest version="2.0" type="device" target-level="2">
+<manifest version="2.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -376,22 +376,6 @@
         <fqname>@1.0::ILbs/mtk_mtklogger2mnld</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.log</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ILog</name>
-            <instance>ATMWiFiHidlServer</instance>
-            <instance>ConnsysFWHidlServer</instance>
-            <instance>MobileLogHidlServer</instance>
-            <instance>ModemLogHidlServer</instance>
-        </interface>
-        <fqname>@1.0::ILog/ATMWiFiHidlServer</fqname>
-        <fqname>@1.0::ILog/ConnsysFWHidlServer</fqname>
-        <fqname>@1.0::ILog/MobileLogHidlServer</fqname>
-        <fqname>@1.0::ILog/ModemLogHidlServer</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.mdmonitor</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -527,16 +511,6 @@
         <fqname>@1.0::IVideoTelephony/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.wifi.hostapd</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IHostapd</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IHostapd/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.wifi.supplicant</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -547,16 +521,6 @@
         <fqname>@2.0::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.oplus.hardware.biometrics.face</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBiometricsFace</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBiometricsFace/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.oplus.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -565,26 +529,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.1::IBiometricsFingerprint/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oplus.hardware.biometrics.fingerprintpay</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFingerprintPay</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFingerprintPay/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.oplus.hardware.cryptoeng</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICryptoeng</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ICryptoeng/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.trustonic.tee</name>
