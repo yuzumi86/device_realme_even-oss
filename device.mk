@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera
+    $(DEVICE_PATH)/configs/apps/Camera
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -93,10 +93,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
 
-# Health
-# PRODUCT_PACKAGES += \
-#     android.hardware.health-service.even \
-#     android.hardware.health-service.even-recovery
+ Health
+ PRODUCT_PACKAGES += \
+     android.hardware.health-service.even \
+     android.hardware.health-service.even-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -157,6 +157,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.3
     android.hardware.power@1.3.vendor
 
 
@@ -186,7 +187,7 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Screen Recorder
 PRODUCT_PACKAGES += \
-    ScreenRecorder
+    $(DEVICE_PATH)/configs/apps/ScreenRecorder
 	
 # Speed up
 PRODUCT_DEXPREOPT_SPEED_APPS += \
