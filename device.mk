@@ -39,6 +39,9 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# vintf
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
+
 # Disable APEX compression
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
